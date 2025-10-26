@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fire safety tips, wildfire preparedness, and emergency procedures for Vista Fire District.">
+    <title>Safety & Preparedness - Vista Fire District</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fire: {
+                            50: '#fef2f2', 100: '#fee2e2', 200: '#fecaca', 300: '#fca5a5',
+                            400: '#f87171', 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c',
+                            800: '#991b1b', 900: '#7f1d1d',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-fire-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-fire-700 font-bold text-2xl">VFD</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Vista Fire District</h1>
+                        <p class="text-fire-100 text-sm">Serving Our Community</p>
+                    </div>
+                </div>
+                <div class="hidden md:block text-right">
+                    <p class="text-fire-100 text-sm">Emergency</p>
+                    <p class="text-3xl font-bold">911</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <ul class="flex space-x-1 py-3">
+                <li><a href="index.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Home</a></li>
+                <li><a href="about.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">About</a></li>
+                <li><a href="commissioners.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Board</a></li>
+                <li><a href="safety.html" class="px-4 py-2 rounded bg-fire-600 hover:bg-fire-700 transition">Safety</a></li>
+                <li><a href="meetings.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Meetings</a></li>
+                <li><a href="transparency.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Transparency</a></li>
+                <li><a href="contact.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <!-- Page Title -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Safety & Preparedness</h1>
+            <p class="text-gray-600">Resources to keep you and your family safe</p>
+        </div>
+
+        <!-- Fire Safety Tips -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Home Fire Safety</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Smoke Detectors</h3>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Install smoke detectors on every level of your home</li>
+                        <li>Place them inside bedrooms and outside sleeping areas</li>
+                        <li>Test detectors monthly</li>
+                        <li>Replace batteries at least once a year</li>
+                        <li>Replace smoke detectors every 10 years</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Fire Extinguishers</h3>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Keep extinguishers in the kitchen, garage, and near fireplaces</li>
+                        <li>Know how to use them (P.A.S.S. method)</li>
+                        <li>Check pressure gauge regularly</li>
+                        <li>Replace or service as needed</li>
+                        <li>Never fight a fire if it's spreading rapidly</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Kitchen Safety</h3>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Never leave cooking unattended</li>
+                        <li>Keep flammable items away from the stove</li>
+                        <li>Turn pot handles inward</li>
+                        <li>Keep a lid nearby to smother grease fires</li>
+                        <li>Never use water on a grease fire</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Escape Planning</h3>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Create a home escape plan with two ways out</li>
+                        <li>Practice your escape plan twice a year</li>
+                        <li>Choose a meeting place outside</li>
+                        <li>Once out, stay out - never go back inside</li>
+                        <li>Call 911 from outside</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wildfire Preparedness -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Wildfire Preparedness</h2>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
+                <p class="text-yellow-900 font-semibold">Wildfire season typically runs from [Season]. Stay informed about fire conditions in your area.</p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Defensible Space</h3>
+            <p class="text-gray-700 mb-4">Create and maintain defensible space around your home:</p>
+
+            <div class="space-y-4 mb-6">
+                <div>
+                    <h4 class="font-bold text-fire-600">Zone 1 (0-5 feet from home)</h4>
+                    <ul class="text-gray-700 list-disc list-inside ml-4">
+                        <li>Remove all dead plants, grass, and weeds</li>
+                        <li>Remove dead or dying leaves, needles, and branches</li>
+                        <li>Keep lawn mowed and well-watered</li>
+                        <li>Trim branches that hang over the roof</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-fire-600">Zone 2 (5-30 feet from home)</h4>
+                    <ul class="text-gray-700 list-disc list-inside ml-4">
+                        <li>Create horizontal and vertical spacing between plants</li>
+                        <li>Remove vegetation under trees</li>
+                        <li>Cut grass down to 4 inches maximum</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-fire-600">Zone 3 (30-100 feet from home)</h4>
+                    <ul class="text-gray-700 list-disc list-inside ml-4">
+                        <li>Remove dead wood and debris</li>
+                        <li>Thin trees and large shrubs</li>
+                        <li>Keep grass and vegetation low</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Evacuation Checklist</h3>
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <h4 class="font-bold text-gray-800 mb-3">Your "Go Bag" Should Include:</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <ul class="text-gray-700 space-y-1">
+                        <li>✓ Important documents (IDs, insurance, medical records)</li>
+                        <li>✓ Prescription medications</li>
+                        <li>✓ Water and non-perishable food</li>
+                        <li>✓ First aid kit</li>
+                        <li>✓ Flashlight and batteries</li>
+                    </ul>
+                    <ul class="text-gray-700 space-y-1">
+                        <li>✓ Cell phone charger</li>
+                        <li>✓ Cash and credit cards</li>
+                        <li>✓ Change of clothes</li>
+                        <li>✓ Pet supplies and carrier</li>
+                        <li>✓ Photos and irreplaceable items</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Procedures -->
+        <section class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Emergency Procedures</h2>
+
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">If There's a Fire in Your Home</h3>
+                    <ol class="space-y-2 text-gray-700 list-decimal list-inside">
+                        <li><strong>Get out fast</strong> - Don't stop for belongings</li>
+                        <li><strong>Close doors</strong> behind you to slow the spread of fire</li>
+                        <li><strong>Check doors</strong> before opening - if hot, use another way out</li>
+                        <li><strong>Crawl low</strong> under smoke</li>
+                        <li><strong>Once out, stay out</strong> - Never go back inside</li>
+                        <li><strong>Call 911</strong> from outside</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Stop, Drop, and Roll</h3>
+                    <p class="text-gray-700 mb-2">If your clothes catch fire:</p>
+                    <ol class="space-y-2 text-gray-700 list-decimal list-inside">
+                        <li><strong>Stop</strong> where you are</li>
+                        <li><strong>Drop</strong> to the ground</li>
+                        <li><strong>Roll</strong> over and over to smother the flames</li>
+                        <li><strong>Cool</strong> the burn with water and get medical help</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Wildfire Evacuation</h3>
+                    <p class="text-gray-700 mb-2">If ordered to evacuate:</p>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Leave immediately - don't wait</li>
+                        <li>Follow designated evacuation routes</li>
+                        <li>Take your "Go Bag" and pets</li>
+                        <li>Close all windows and doors</li>
+                        <li>Turn off pilot lights and air conditioning</li>
+                        <li>Leave lights on so firefighters can see your home</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-fire-400 transition">About Us</a></li>
+                        <li><a href="commissioners.html" class="hover:text-fire-400 transition">Board of Commissioners</a></li>
+                        <li><a href="meetings.html" class="hover:text-fire-400 transition">Meetings</a></li>
+                        <li><a href="transparency.html" class="hover:text-fire-400 transition">Transparency</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="mb-2">Vista Fire District</p>
+                    <p class="mb-2">[Address]</p>
+                    <p class="mb-2">[City, State ZIP]</p>
+                    <p class="mb-2">Phone: (555) 123-4567</p>
+                    <p>Email: info@vistafd.gov</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Office Hours</h4>
+                    <p class="mb-2">Monday - Friday</p>
+                    <p class="mb-4">8:00 AM - 5:00 PM</p>
+                    <p class="text-fire-400 font-semibold">Emergency Services: 24/7</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Vista Fire District. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

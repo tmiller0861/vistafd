@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Vista Fire District's mission, history, and services.">
+    <title>About Us - Vista Fire District</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fire: {
+                            50: '#fef2f2', 100: '#fee2e2', 200: '#fecaca', 300: '#fca5a5',
+                            400: '#f87171', 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c',
+                            800: '#991b1b', 900: '#7f1d1d',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-fire-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-fire-700 font-bold text-2xl">VFD</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Vista Fire District</h1>
+                        <p class="text-fire-100 text-sm">Serving Our Community</p>
+                    </div>
+                </div>
+                <div class="hidden md:block text-right">
+                    <p class="text-fire-100 text-sm">Emergency</p>
+                    <p class="text-3xl font-bold">911</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <ul class="flex space-x-1 py-3">
+                <li><a href="index.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Home</a></li>
+                <li><a href="about.html" class="px-4 py-2 rounded bg-fire-600 hover:bg-fire-700 transition">About</a></li>
+                <li><a href="commissioners.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Board</a></li>
+                <li><a href="safety.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Safety</a></li>
+                <li><a href="meetings.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Meetings</a></li>
+                <li><a href="transparency.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Transparency</a></li>
+                <li><a href="contact.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <!-- Page Title -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">About Vista Fire District</h1>
+            <p class="text-gray-600">Dedicated to protecting our community since [Year]</p>
+        </div>
+
+        <!-- Mission Statement -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                The Vista Fire District is committed to protecting lives, property, and the environment through
+                professional fire suppression, emergency medical services, fire prevention, and community education.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                We strive to provide the highest level of service to our community through continuous training,
+                modern equipment, and a dedication to excellence in emergency response.
+            </p>
+        </section>
+
+        <!-- Services -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Services</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="flex items-start">
+                    <div class="bg-fire-100 rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-fire-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Fire Suppression</h3>
+                        <p class="text-gray-700">24/7 emergency response to structural fires, wildland fires, and other fire-related emergencies.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="bg-fire-100 rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-fire-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Emergency Medical Services</h3>
+                        <p class="text-gray-700">Advanced life support and basic life support emergency medical response.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="bg-fire-100 rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-fire-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Fire Prevention</h3>
+                        <p class="text-gray-700">Fire safety inspections, code enforcement, and fire investigation services.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="bg-fire-100 rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-fire-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Public Education</h3>
+                        <p class="text-gray-700">Fire safety education, school programs, and community outreach initiatives.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Coverage Area -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Coverage Area</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-700 mb-4">
+                        Vista Fire District serves approximately [X] square miles in [County/Region Name],
+                        providing fire protection and emergency medical services to [Y] residents and [Z] structures.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Our district includes [describe coverage area - communities, landmarks, etc.].
+                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3 mt-6">District Facts</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><strong>Established:</strong> [Year]</li>
+                        <li><strong>Service Area:</strong> [X] square miles</li>
+                        <li><strong>Population Served:</strong> Approximately [Y] residents</li>
+                        <li><strong>Fire Stations:</strong> [Number]</li>
+                        <li><strong>Personnel:</strong> [Number] career and volunteer firefighters</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-center">
+                    <!-- Placeholder for district map -->
+                    <div class="text-center text-gray-500">
+                        <svg class="w-48 h-48 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                        </svg>
+                        <p class="font-semibold">District Map</p>
+                        <p class="text-sm">[Insert map image or PDF link]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our History</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                [Add brief history of the fire district - when it was formed, major milestones, how it has evolved, etc.]
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                [Continue history narrative...]
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                Today, Vista Fire District continues to serve our community with dedication and professionalism,
+                adapting to meet the changing needs of our growing district while maintaining our commitment
+                to excellence in emergency services.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-fire-400 transition">About Us</a></li>
+                        <li><a href="commissioners.html" class="hover:text-fire-400 transition">Board of Commissioners</a></li>
+                        <li><a href="meetings.html" class="hover:text-fire-400 transition">Meetings</a></li>
+                        <li><a href="transparency.html" class="hover:text-fire-400 transition">Transparency</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="mb-2">Vista Fire District</p>
+                    <p class="mb-2">[Address]</p>
+                    <p class="mb-2">[City, State ZIP]</p>
+                    <p class="mb-2">Phone: (555) 123-4567</p>
+                    <p>Email: info@vistafd.gov</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Office Hours</h4>
+                    <p class="mb-2">Monday - Friday</p>
+                    <p class="mb-4">8:00 AM - 5:00 PM</p>
+                    <p class="text-fire-400 font-semibold">Emergency Services: 24/7</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Vista Fire District. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

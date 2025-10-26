@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Vista Fire District - office hours, phone, email, and location.">
+    <title>Contact Us - Vista Fire District</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fire: {
+                            50: '#fef2f2', 100: '#fee2e2', 200: '#fecaca', 300: '#fca5a5',
+                            400: '#f87171', 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c',
+                            800: '#991b1b', 900: '#7f1d1d',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-fire-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-fire-700 font-bold text-2xl">VFD</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Vista Fire District</h1>
+                        <p class="text-fire-100 text-sm">Serving Our Community</p>
+                    </div>
+                </div>
+                <div class="hidden md:block text-right">
+                    <p class="text-fire-100 text-sm">Emergency</p>
+                    <p class="text-3xl font-bold">911</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <ul class="flex space-x-1 py-3">
+                <li><a href="index.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Home</a></li>
+                <li><a href="about.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">About</a></li>
+                <li><a href="commissioners.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Board</a></li>
+                <li><a href="safety.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Safety</a></li>
+                <li><a href="meetings.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Meetings</a></li>
+                <li><a href="transparency.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Transparency</a></li>
+                <li><a href="contact.html" class="px-4 py-2 rounded bg-fire-600 hover:bg-fire-700 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <!-- Page Title -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Contact Us</h1>
+            <p class="text-gray-600">Get in touch with Vista Fire District</p>
+        </div>
+
+        <!-- Emergency Alert -->
+        <section class="bg-fire-100 border-l-4 border-fire-600 rounded-lg p-6 mb-8">
+            <div class="flex items-start">
+                <svg class="w-8 h-8 text-fire-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                </svg>
+                <div>
+                    <h3 class="font-bold text-fire-900 text-xl mb-2">In Case of Emergency</h3>
+                    <p class="text-fire-900 text-lg">For all fire, medical, or life-threatening emergencies, call <strong class="text-2xl">911</strong> immediately.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Contact Information -->
+            <div class="space-y-6">
+
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Office Information</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-fire-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Address</h3>
+                                <p class="text-gray-700">[Street Address]</p>
+                                <p class="text-gray-700">[City, State ZIP]</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-fire-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Phone</h3>
+                                <p class="text-gray-700"><strong>Emergency:</strong> 911</p>
+                                <p class="text-gray-700"><strong>Non-Emergency:</strong> (555) 123-4567</p>
+                                <p class="text-gray-700"><strong>Fax:</strong> (555) 123-4568</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-fire-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Email</h3>
+                                <p class="text-gray-700"><a href="mailto:info@vistafd.gov" class="text-fire-600 hover:text-fire-700">info@vistafd.gov</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-fire-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Office Hours</h3>
+                                <p class="text-gray-700">Monday - Friday</p>
+                                <p class="text-gray-700">8:00 AM - 5:00 PM</p>
+                                <p class="text-fire-600 font-semibold mt-2">Emergency Services: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Department Contacts</h2>
+                    <div class="space-y-3 text-gray-700">
+                        <div>
+                            <h3 class="font-bold text-gray-800">Fire Chief</h3>
+                            <p>[Name]</p>
+                            <p><a href="mailto:chief@vistafd.gov" class="text-fire-600 hover:text-fire-700">chief@vistafd.gov</a></p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-200">
+                            <h3 class="font-bold text-gray-800">Administrative Staff</h3>
+                            <p>[Name], [Title]</p>
+                            <p><a href="mailto:admin@vistafd.gov" class="text-fire-600 hover:text-fire-700">admin@vistafd.gov</a></p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-200">
+                            <h3 class="font-bold text-gray-800">Board of Commissioners</h3>
+                            <p><a href="mailto:board@vistafd.gov" class="text-fire-600 hover:text-fire-700">board@vistafd.gov</a></p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Map and Contact Form -->
+            <div class="space-y-6">
+
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Location Map</h2>
+                    <div class="bg-gray-200 h-64 rounded flex items-center justify-center text-gray-500">
+                        <!-- Replace with actual Google Maps embed -->
+                        <p>Google Maps Embed Here</p>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-3">
+                        [Add directions or additional location information]
+                    </p>
+                </section>
+
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Send Us a Message</h2>
+                    <p class="text-gray-700 mb-4">For non-emergency inquiries, please email us at <a href="mailto:info@vistafd.gov" class="text-fire-600 hover:text-fire-700 font-semibold">info@vistafd.gov</a></p>
+                    <!-- Simple contact form could go here -->
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-fire-400 transition">About Us</a></li>
+                        <li><a href="commissioners.html" class="hover:text-fire-400 transition">Board of Commissioners</a></li>
+                        <li><a href="meetings.html" class="hover:text-fire-400 transition">Meetings</a></li>
+                        <li><a href="transparency.html" class="hover:text-fire-400 transition">Transparency</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="mb-2">Vista Fire District</p>
+                    <p class="mb-2">[Address]</p>
+                    <p class="mb-2">[City, State ZIP]</p>
+                    <p class="mb-2">Phone: (555) 123-4567</p>
+                    <p>Email: info@vistafd.gov</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Office Hours</h4>
+                    <p class="mb-2">Monday - Friday</p>
+                    <p class="mb-4">8:00 AM - 5:00 PM</p>
+                    <p class="text-fire-400 font-semibold">Emergency Services: 24/7</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Vista Fire District. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

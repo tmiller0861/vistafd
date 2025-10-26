@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vista Fire District board meeting schedule and calendar.">
+    <title>Meetings & Events - Vista Fire District</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fire: {
+                            50: '#fef2f2', 100: '#fee2e2', 200: '#fecaca', 300: '#fca5a5',
+                            400: '#f87171', 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c',
+                            800: '#991b1b', 900: '#7f1d1d',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-fire-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-fire-700 font-bold text-2xl">VFD</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Vista Fire District</h1>
+                        <p class="text-fire-100 text-sm">Serving Our Community</p>
+                    </div>
+                </div>
+                <div class="hidden md:block text-right">
+                    <p class="text-fire-100 text-sm">Emergency</p>
+                    <p class="text-3xl font-bold">911</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <ul class="flex space-x-1 py-3">
+                <li><a href="index.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Home</a></li>
+                <li><a href="about.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">About</a></li>
+                <li><a href="commissioners.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Board</a></li>
+                <li><a href="safety.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Safety</a></li>
+                <li><a href="meetings.html" class="px-4 py-2 rounded bg-fire-600 hover:bg-fire-700 transition">Meetings</a></li>
+                <li><a href="transparency.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Transparency</a></li>
+                <li><a href="contact.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <!-- Page Title -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Meetings & Events</h1>
+            <p class="text-gray-600">Stay informed about board meetings and district events</p>
+        </div>
+
+        <!-- Next Meeting Highlight -->
+        <section class="bg-gradient-to-r from-fire-600 to-fire-800 text-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold mb-4">Next Board Meeting</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <p class="text-xl mb-2"><strong>Date:</strong> [Date - e.g., Tuesday, March 12, 2025]</p>
+                    <p class="text-xl mb-2"><strong>Time:</strong> 6:00 PM</p>
+                    <p class="text-xl mb-2"><strong>Location:</strong> Vista Fire District Office</p>
+                    <p class="text-xl mb-4">[Address]</p>
+                    <a href="#" class="bg-white text-fire-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">View Agenda (PDF)</a>
+                </div>
+                <div class="bg-fire-900 bg-opacity-50 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">Public Participation</h3>
+                    <p class="mb-2">Members of the public are welcome to attend board meetings and may provide comments during the public comment period.</p>
+                    <p>For more information, contact the district office at (555) 123-4567.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meeting Schedule -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Regular Meeting Schedule</h2>
+            <p class="text-gray-700 mb-6">
+                The Vista Fire District Board of Commissioners meets on the <strong>[frequency, e.g., "second Tuesday of each month"]</strong>
+                at <strong>6:00 PM</strong> at the district office located at [Address].
+            </p>
+
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
+                <p class="text-blue-900">
+                    <strong>Note:</strong> Meeting dates and times are subject to change. Please check this page or contact the district office to confirm before attending.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Upcoming Meetings</h3>
+            <div class="space-y-4">
+
+                <div class="border-l-4 border-fire-600 pl-4 py-2">
+                    <p class="font-bold text-lg text-gray-800">[Date - e.g., March 12, 2025] - Regular Board Meeting</p>
+                    <p class="text-gray-700">6:00 PM - District Office</p>
+                    <a href="#" class="text-fire-600 hover:text-fire-700 font-semibold">View Agenda →</a>
+                </div>
+
+                <div class="border-l-4 border-fire-600 pl-4 py-2">
+                    <p class="font-bold text-lg text-gray-800">[Date - e.g., April 9, 2025] - Regular Board Meeting</p>
+                    <p class="text-gray-700">6:00 PM - District Office</p>
+                    <p class="text-gray-500 text-sm">Agenda to be posted closer to meeting date</p>
+                </div>
+
+                <div class="border-l-4 border-fire-600 pl-4 py-2">
+                    <p class="font-bold text-lg text-gray-800">[Date - e.g., May 14, 2025] - Regular Board Meeting</p>
+                    <p class="text-gray-700">6:00 PM - District Office</p>
+                    <p class="text-gray-500 text-sm">Agenda to be posted closer to meeting date</p>
+                </div>
+
+                <div class="border-l-4 border-fire-600 pl-4 py-2">
+                    <p class="font-bold text-lg text-gray-800">[Date - e.g., June 11, 2025] - Regular Board Meeting (Budget Hearing)</p>
+                    <p class="text-gray-700">6:00 PM - District Office</p>
+                    <p class="text-gray-500 text-sm">Agenda to be posted closer to meeting date</p>
+                </div>
+
+            </div>
+
+            <div class="mt-6">
+                <a href="minutes.html" class="text-fire-600 hover:text-fire-700 font-semibold">View Past Meeting Minutes →</a>
+            </div>
+        </section>
+
+        <!-- How to Participate -->
+        <section class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">How to Participate</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Attending Meetings</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ All board meetings are open to the public</li>
+                        <li>✓ No registration or reservation required</li>
+                        <li>✓ Arrive a few minutes early to sign in</li>
+                        <li>✓ Meeting agendas are posted [timeframe] before meetings</li>
+                        <li>✓ Minutes are posted after board approval</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Public Comment</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Public comment period at each meeting</li>
+                        <li>✓ Sign up when you arrive</li>
+                        <li>✓ Comments typically limited to [X] minutes</li>
+                        <li>✓ Address comments to the board chair</li>
+                        <li>✓ Be respectful and stay on topic</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Written Comments</h3>
+                    <p class="text-gray-700">
+                        You may submit written comments to the board via email at <a href="mailto:board@vistafd.gov" class="text-fire-600 hover:text-fire-700">board@vistafd.gov</a>
+                        or by mail to:<br>
+                        Vista Fire District<br>
+                        [Address]<br>
+                        [City, State ZIP]
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Accessibility</h3>
+                    <p class="text-gray-700">
+                        The district office is ADA accessible. If you require special accommodations to participate in a meeting,
+                        please contact the district office at least 48 hours in advance at (555) 123-4567.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-fire-400 transition">About Us</a></li>
+                        <li><a href="commissioners.html" class="hover:text-fire-400 transition">Board of Commissioners</a></li>
+                        <li><a href="meetings.html" class="hover:text-fire-400 transition">Meetings</a></li>
+                        <li><a href="transparency.html" class="hover:text-fire-400 transition">Transparency</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="mb-2">Vista Fire District</p>
+                    <p class="mb-2">[Address]</p>
+                    <p class="mb-2">[City, State ZIP]</p>
+                    <p class="mb-2">Phone: (555) 123-4567</p>
+                    <p>Email: info@vistafd.gov</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Office Hours</h4>
+                    <p class="mb-2">Monday - Friday</p>
+                    <p class="mb-4">8:00 AM - 5:00 PM</p>
+                    <p class="text-fire-400 font-semibold">Emergency Services: 24/7</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Vista Fire District. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

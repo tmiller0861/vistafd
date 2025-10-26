@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vista Fire District transparency - budgets, financial reports, and governance documents.">
+    <title>Transparency - Vista Fire District</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fire: {
+                            50: '#fef2f2', 100: '#fee2e2', 200: '#fecaca', 300: '#fca5a5',
+                            400: '#f87171', 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c',
+                            800: '#991b1b', 900: '#7f1d1d',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-fire-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-fire-700 font-bold text-2xl">VFD</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Vista Fire District</h1>
+                        <p class="text-fire-100 text-sm">Serving Our Community</p>
+                    </div>
+                </div>
+                <div class="hidden md:block text-right">
+                    <p class="text-fire-100 text-sm">Emergency</p>
+                    <p class="text-3xl font-bold">911</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <ul class="flex space-x-1 py-3">
+                <li><a href="index.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Home</a></li>
+                <li><a href="about.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">About</a></li>
+                <li><a href="commissioners.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Board</a></li>
+                <li><a href="safety.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Safety</a></li>
+                <li><a href="meetings.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Meetings</a></li>
+                <li><a href="transparency.html" class="px-4 py-2 rounded bg-fire-600 hover:bg-fire-700 transition">Transparency</a></li>
+                <li><a href="contact.html" class="px-4 py-2 rounded hover:bg-gray-700 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <!-- Page Title -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Transparency & Governance</h1>
+            <p class="text-gray-600">Public access to budgets, financial reports, and governance documents</p>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-6 mb-8">
+            <p class="text-blue-900">
+                Vista Fire District is committed to transparency and accountability. This page provides public access to
+                our budget documents, financial reports, meeting minutes, and governance policies. We believe in open
+                government and welcome community engagement.
+            </p>
+        </section>
+
+        <!-- Budgets & Finance -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8" id="budgets">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Budgets & Financial Documents</h2>
+
+            <h3 class="text-2xl font-bold text-fire-600 mb-4">Current Fiscal Year (FY 2025)</h3>
+            <div class="space-y-3 mb-8">
+                <div class="flex items-center justify-between p-4 border-2 border-fire-600 bg-fire-50 rounded-lg">
+                    <div>
+                        <p class="font-bold text-lg text-gray-800">FY 2025 Adopted Budget</p>
+                        <p class="text-sm text-gray-600">Adopted: [Date]</p>
+                    </div>
+                    <a href="documents/budgets/fy2025-adopted-budget.pdf" class="bg-fire-600 text-white px-4 py-2 rounded hover:bg-fire-700 transition">
+                        Download PDF
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-between p-4 border bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <div>
+                        <p class="font-bold text-gray-800">FY 2025 Budget Summary (Citizen Version)</p>
+                        <p class="text-sm text-gray-600">Simplified overview of the budget</p>
+                    </div>
+                    <a href="documents/budgets/fy2025-budget-summary.pdf" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition">
+                        Download PDF
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-between p-4 border bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <div>
+                        <p class="font-bold text-gray-800">FY 2025 Mid-Year Financial Report</p>
+                        <p class="text-sm text-gray-600">Report Date: [Date]</p>
+                    </div>
+                    <a href="documents/budgets/fy2025-midyear-report.pdf" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition">
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Historical Budgets</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+
+                <div class="flex items-center justify-between p-4 border bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <p class="font-bold text-gray-800">FY 2024 Adopted Budget</p>
+                    <a href="documents/budgets/fy2024-adopted-budget.pdf" class="text-fire-600 hover:text-fire-700 font-semibold">
+                        Download →
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-between p-4 border bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <p class="font-bold text-gray-800">FY 2023 Adopted Budget</p>
+                    <a href="documents/budgets/fy2023-adopted-budget.pdf" class="text-fire-600 hover:text-fire-700 font-semibold">
+                        Download →
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-between p-4 border bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <p class="font-bold text-gray-800">FY 2022 Adopted Budget</p>
+                    <a href="documents/budgets/fy2022-adopted-budget.pdf" class="text-fire-600 hover:text-fire-700 font-semibold">
+                        Download →
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-between p-4 border bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <p class="font-bold text-gray-800">FY 2021 Adopted Budget</p>
+                    <a href="documents/budgets/fy2021-adopted-budget.pdf" class="text-fire-600 hover:text-fire-700 font-semibold">
+                        Download →
+                    </a>
+                </div>
+
+            </div>
+
+            <p class="text-gray-600 mt-4 text-sm">
+                For budgets from previous years, please contact the district office.
+            </p>
+        </section>
+
+        <!-- Meeting Minutes -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8" id="minutes">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Meeting Minutes</h2>
+            <p class="text-gray-700 mb-4">
+                Board meeting minutes are available for public review. Minutes are posted after they have been approved
+                by the Board of Commissioners.
+            </p>
+            <a href="minutes.html" class="inline-block bg-fire-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-fire-700 transition">
+                View All Meeting Minutes →
+            </a>
+        </section>
+
+        <!-- Governance Documents -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8" id="governance">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Governance & Policy Documents</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">District Formation & Bylaws</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            District Formation Documents
+                        </a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            District Bylaws
+                        </a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Board Policies & Procedures
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Elections & Board Information</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Election Information & Calendar
+                        </a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Board Position Descriptions
+                        </a></li>
+                        <li><a href="commissioners.html" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            Current Board Members
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Ethics & Transparency</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Code of Ethics
+                        </a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Public Records Request Policy
+                        </a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Conflict of Interest Policy
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-fire-600 mb-3">Annual Reports & Plans</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            2024 Annual Report
+                        </a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Strategic Plan
+                        </a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-fire-600 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Capital Improvement Plan
+                        </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Public Records Request -->
+        <section class="bg-fire-50 border-l-4 border-fire-600 rounded-lg p-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Request Public Records</h3>
+            <p class="text-gray-700 mb-4">
+                Vista Fire District is committed to transparency and complies with state public records laws.
+                To request public records not available on this website, please contact:
+            </p>
+            <div class="space-y-2 text-gray-700">
+                <p><strong>Email:</strong> <a href="mailto:records@vistafd.gov" class="text-fire-600 hover:text-fire-700">records@vistafd.gov</a></p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Mail:</strong> Vista Fire District, Attn: Public Records, [Address], [City, State ZIP]</p>
+            </div>
+            <p class="text-gray-600 text-sm mt-4">
+                Please allow [X] business days for processing. Some requests may require fees for copying and staff time.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-fire-400 transition">About Us</a></li>
+                        <li><a href="commissioners.html" class="hover:text-fire-400 transition">Board of Commissioners</a></li>
+                        <li><a href="meetings.html" class="hover:text-fire-400 transition">Meetings</a></li>
+                        <li><a href="transparency.html" class="hover:text-fire-400 transition">Transparency</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="mb-2">Vista Fire District</p>
+                    <p class="mb-2">[Address]</p>
+                    <p class="mb-2">[City, State ZIP]</p>
+                    <p class="mb-2">Phone: (555) 123-4567</p>
+                    <p>Email: info@vistafd.gov</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Office Hours</h4>
+                    <p class="mb-2">Monday - Friday</p>
+                    <p class="mb-4">8:00 AM - 5:00 PM</p>
+                    <p class="text-fire-400 font-semibold">Emergency Services: 24/7</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Vista Fire District. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
